@@ -1,6 +1,7 @@
+<?php require('partials/header.php'); ?>
 <?php 
 
-if( isset( $_POST["submit"]) ) {
+if( !isset( $_POST["submit"]) ) {
  if ( $_POST["username"] == "nita" &&  $_POST["password"] == "1023" )  {
 
     header("Location: admin.php");

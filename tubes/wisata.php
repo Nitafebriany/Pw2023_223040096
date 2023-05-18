@@ -1,68 +1,70 @@
 <?php 
-$destinasi = [
-    [
-        'img' => 'temple.jpg',
-        'name' => 'Candi Borobudur'
-    ],
-    [
-        'img' => 'tumfull.jpg',
-        'name' => 'Taman Sari'
-    ]
-]
-?>
+$wisata =
+[
+  [
+  'img' => 'tumfull.jpg',
+  'Lokasi' => 'Taman Sari',
+  'Desk' => 'Taman Sari Yogyakarta adalah situs bekas taman atau kebun istana Keraton NGayogyakarta Hadiningrat, Kebun ini dibangun pada zama sultan Hamengku Buwono I pada tahun 1758-1765/9'],
+[
+  'img' => 'jamthum.jpg',
+  'Lokasi' => 'Malioboro',
+  'Desk' => 'Maliboro Adalah Salah satu kawasan dari tiga jalan di kota Yogyakarta yang membentang dari Tugu Yogyakarta hingga ke persimpangan Titik 0 km Yogyakarta.'
+],
+[
+'img' => 'bg.jpg',
+'Lokasi' =>'Tugu Jogja',
+'Desk' => ''
+],
+[
+'img' => 'tentang.jpg',
+'Lokasi' =>'Candi Prambanan',
+'Desk' => ''
+],
+[
+'img' => 'borobudur.jpg',
+'Lokasi' =>'Candi Borobudur',
+'Desk' => ''
+],
+[
+'img' => '',
+'Lokasi' =>'Museum Benteng Vredeburg',
+'Desk' => ''
+],
+[
+'img' => '',
+'Lokasi' =>'Pantai Parangtritis',
+'Desk' => ''
+],
+[
+'img' => '',
+'Lokasi' =>'',
+'Desk' => ''
+],
 
-<!DOCTYPE html>
+] ?>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinasi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NitaFebriany.| <?= $title; ?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
 <body>
-    <div class="wisata">
-<h2>Destinasi Wisata Yogyakarta</h2>
-<h3>Yogyakarta dikenal juga sebagai kota pariwisata, itu karena yogyakarta memiliki banyak tempat wisata yang menarik</h3>
-    <?php foreach ($destinasi  as $de){  ?>
-    <img src="img/<?=$de['img'];?>" alt="Poster">  
-    <li><?=$de['name'];?></li>
-    <?php } ?>
+  <div class="card col-md-3">
+    <?php foreach ($wisata  as $wi) { ?>
+  <img src="img/<?= $wi['img'] ?>" class="card-img-top img-thumbnail"  alt="Poster" width="200px">
+  <div class="card-body">
+    <h5 class="card-title"> 
+        <?= $wi['Lokasi'];?>
+      </h5>
+      <p class="card-text">
+      <?= $wi['Desk']; ?></p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-</body>
+    <?php } ?>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
 </html>
-<style>
-     :root {
-     --primary:#d79922;
-        --bg: #2c3531;
-     }
-    body {
-        background-color:#c5cbe3; 
-        font-family:'Nanum Myeongjo', serif; 
-    }
-    .wisata h2 {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        font-size: 2rem;
-        color: #2c3531;
-        margin: 2% 30%;
-    }
-    .wisata h3 {
-        font-size: 1.5rem;
-        position: relative;
-        justify-content: center;
-        color: var(--primary);
-    }
-    .wisata li {
-        font-size: 2rem;
-    }
-    .wisata img {
-       position: inline-box;
-    }
-
-
-</style>

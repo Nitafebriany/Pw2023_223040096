@@ -1,17 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tubes</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/feather-icons"></script>
-    <style type="text/css">
-   :root {
+<?php require ('partials/header.php');?>
+<?php require ('partials/nav.php'); ?>
+<style>
+    :root {
         --primary:#d79922;
         --bg: #2c3531;
     }
@@ -33,76 +23,7 @@
         align-items: center;
         position: center;
     }
-    .navbar {
-        display: flex;
-        position: fixed;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.3rem  4%;
-        background-color: #2c3531;
-        border-bottom: 1px solid #513c28;
-        position: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-    }
-   .navbar .navbar-navbar1 {
-       color:#ffff;
-       font-size: 2rem;
-       font-weight: 500;
-       font-style: italic;
-   }
-    .navbar .navbar-navbar1 span {
-        color: var(--primary);
-        
-        
-    }
-    .navbar .navbar-nav a {
-    
-    display: inline-block;
-    font-size: 16px ;
-    margin: 1rem;
-    
-    }
-    .navbar .navbar-nav a:hover {
-    color: var(--primary);
-    }
-    .navbar .navbar-nav a::after {
-       content:'';
-       display: block;
-       padding-bottom: 0.5rem;
-       border-bottom: 0.1rem solid var(--primary);
-       transform: scaleX(0);
-       transition: 0.2s linear;
-    } 
-    .navbar .navbar-nav a:hover::after {
-        transform: scaleX(0.5);
-    
-    }
-    .menu h2 {
-        margin-bottom: 1rem;
-    }
-    .menu p {
-        text-align: center;
-        max-width: 30rem;
-        margin: auto;
-        font-size: 1rem;
-        font-weight: 100;
-        line-height: 1.6;
-    }
-    
-    .navbar .navbar-extra a {
-        color: #ffff;
-        margin: 0 0.5rem;
-    }
-    .navbar .navbar-extra a:hover {
-        color: var(--primary);
-        
-    }
-   
-
-    .hero {
+.hero {
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -208,83 +129,8 @@
     padding-left: 1rem;
  }
  
- footer {
-    background-color: var(--bg);
-    text-align: center;
-    padding: 1rem 3rem;
-    margin: auto;
-}
-
-footer .contact {
-    padding: 2rem 0;
-}
-
-footer .contact a{
-    color:   white;
-    margin: 2rem;
-}
-
-footer .contact a:hover {
-    color:  var(--primary);
-}
-
-footer .credit {
-    font-size : 1rem;
-}
-footer .credit p{
-    color:   #c5cbe3;
-    margin-top: 1rem;
-}
-
- 
-        @media screen (max-width: 1360px) {
-        .html {
-        font-size: 100%;    
-        }
-        }
-        
-        @media screen and (max-width: 768px) {
-        .html {
-        font-size: 62.5%;    
-        }
-       
-       .navbar .navbar-nav {
-        position: absolute;
-        top : 100%;
-        right: -100%;
-        background-color: black;
-        width: 30rem;
-        height: 100vh;
-        }
-        .navbar .navbar-nav.active {
-         right: 0;
-        }
-       } 
-        @media (max-width: 450px) {
-        html {
-        font-size: 55%;    
-        }
-        }
-    
-    </style>
-</head>
-<body>
-<nav class="navbar">
-    <div class="navbar-navbar1">
-<a href="#" class="navbar-logo"><span>Travel</span> 
-in 
-<span>Yogyakarta</span></a>
-</div>
-    
-    <div class="navbar-nav">
-    <a href= "#" > Home </a>
-    <a href=""> see&do </a>
-    <a href="#kuliner"> kuliner </a>
-    <a href="wisata.php"> Destinasi</a>
-
-</div>
-    </nav>
-    <section class="hero" id="Home">
+ </style>
+<section class="hero" id="Home">
     <main class="content">
         <h1>Yogyakarta</h1>
         <p>Let's Start your best journey in Yogyakarta
@@ -318,22 +164,4 @@ Selain itu, Yogyakarta juga terkenal dengan julukan Kota Pelajar saking banyakny
         <a href="kuliner.php" class="cta">Selengkapnya</a>
     </div>
     </section>
-
-    <footer>
-        <div class="contact">
-            <a href="#"><li data-feather="instagram"></li></a>
-            <a href="#"><li data-feather="twitter"></li></a>
-            <a href="#"><li data-feather="facebook"></li></a>
-            <a href="#"><li data-feather="phone"></li></a>
-        </div>
-       <div class="credit">
-        <p>Credit Nita febriany &copy;2023.</p>
-       </div>
-    </footer>
-<script>
-      feather.replace()
-    </script>
-
-    
-</body>
-</html>
+    <?php require ('partials/footer.php') ; ?>
