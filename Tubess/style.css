@@ -1,0 +1,360 @@
+:root {
+    --primary: #df744a;
+    --bg:#bfd8d2;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+    
+}
+#logo {
+    font-size: 30px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: var(--bg);
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/vredeburg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h2{
+    color: var(--bg);
+    font-size: 4rem;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: rgba(245, 141, 5, 0.918);
+    font-size: 8rem;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.home .content h3{
+    color:#a5901c;
+    font-size: 2rem;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+
+/* file fav */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: var(--primary); 
+} 
+.fav .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.fav .card img{
+    border-radius: 5px;
+}
+.fav .card .card-body{
+    background: transparent;
+}
+.fav .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.fav .card .card-body p{
+    font-size: 15px;
+}
+.fav .card .card-body:hover p{
+    top: 0;
+    
+}
+
+
+/* Galeri Start */
+.gallary {
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Galleri End */
+
+
+
+
+/* About Start */
+.about {
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 5px;
+    
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p {
+    font-weight: 1px;
+   
+}
+ 
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+
+
+
+
+/* Footer Start */
+footer  {
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: auto;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    /* color: #ffa500; */
+    color: var(--primary);
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
+
+/* Login */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-form {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    background-position: 55%;
+}
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25px);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.5px);
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.1);
+}
+.login h2{
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #8f2c24;
+}
+.login .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #8f2c24;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+}
+.login .inputbox input::placeholder{
+    color: #8f2c24;
+    font-size: 17px;
+}
+#btn {
+    position: relative;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #8f2c24;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: center;
+}
+#btn:hover{
+    background-color: var(--bg);
+}
+.bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-content a{
+    font-size: 1.25em;
+    color: #8f2c24;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+  .sidebar{
+      
+      height: 100%;
+      background: var(--bg);
+      position: absolute;
+      z-index: 100;
+      Font-family:'Lato', sans-serif;
+  }
+  ul {
+      padding: 0;
+      margin-left: -40px;
+      
+  }
+ 
+  ul li a{
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 19px 0px 18px 25px;
+      transition: all 200ms ease-in;
+  } 
+   ul li a:hover{
+      text-decoration: none;
+      color: var(--primary); 
+  }
+  
+  ul li a:visited{
+      text-decoration: none;
+      color: #fff; 
+  } 
+  
+  
+  /*apabila lebar min 768px*/
+   @media(min-width: 768px) {
+      .sidebar{
+          width: 240px;
+      }
+      .content{
+          margin-left: 250px;
+      }
+      .inner{
+          padding: 15px;
+      }
+  }
+
