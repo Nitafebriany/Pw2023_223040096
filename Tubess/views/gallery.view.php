@@ -18,3 +18,6 @@ require('partials/navbar.php');
         </div>
       <?php } ?>
     </div>
+</section>
+
+<?php require('partials/footer.php'); ?>

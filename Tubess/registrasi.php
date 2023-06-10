@@ -11,7 +11,7 @@ if(isset($_POST['registrasi'])){
     echo
    "<script>
     alert('Data berhasil ditambahkan');
-    document.location.href= 'index.php';
+    
    </script>";
    }
 }

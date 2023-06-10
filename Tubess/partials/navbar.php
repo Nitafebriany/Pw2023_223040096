@@ -16,7 +16,7 @@
           <a class="nav-link" href="wisata.php">Destination</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="kuliner.php">culiner</a>
+          <a class="nav-link" href="kuliner.php">Culiner</a>
           <li class="nav-item">
             <a class="nav-link" href="gallery.php">Gallery</a>
           </li>

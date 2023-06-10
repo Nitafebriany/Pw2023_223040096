@@ -14,7 +14,7 @@
 }
 
 /* Navbar Start */
-#navbar{
+#navbar { 
     background: #f9f9f9;
     
 }
@@ -64,9 +64,9 @@
 .home .content{
     text-align: center;
     padding-top: 200px;
+    margin-left: 0;
 }
 .home .content h2{
-    color: var(--bg);
     font-size: 4rem;
     font-weight: 550;
     text-shadow: 0px 1px 1px black;
@@ -113,10 +113,10 @@
         padding: 20px;
     }
 }
-/* Section Book End */
 
 
-/* file fav */
+
+/* fav */
 .main-txt h1{
     text-align: center;
     margin-top: 30px;
@@ -126,28 +126,10 @@
 .main-txt h1 span{
     color: var(--primary); 
 } 
-.fav .card{
-    border-radius: 5px;
-    border: none;
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+.fav {
+    padding: 40px;
 }
-.fav .card img{
-    border-radius: 5px;
-}
-.fav .card .card-body{
-    background: transparent;
-}
-.fav .card .card-body h3{
-    font-size: 25px;
-    font-weight: 600;
-}
-.fav .card .card-body p{
-    font-size: 15px;
-}
-.fav .card .card-body:hover p{
-    top: 0;
-    
-}
+
 
 
 /* Galeri Start */
@@ -175,7 +157,6 @@
 .about {
     padding: 50px;
     margin-top: 50px;
-    background: #f9f9f9;
 }
 .about .card{
     border-radius: 10px;
@@ -216,7 +197,6 @@ footer  {
     text-shadow: 0px 0px 1px black;
 }
 #footer h1 span{
-    /* color: #ffa500; */
     color: var(--primary);
 }
 .social-links i{
@@ -264,7 +244,7 @@ footer  {
     box-shadow: 0px 25px 50px rgba(0,0,0,0.1);
 }
 .login h2{
-    width: 100%;
+    width: 100%; 
     margin-bottom: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -278,7 +258,7 @@ footer  {
     outline: none;
     font-size: 1.25em;
     color: #8f2c24;
-    border-radius: 5px;
+    border-radius: 30px;
     border: none;
     margin-bottom: 30px;
 }
@@ -287,6 +267,9 @@ footer  {
     font-size: 17px;
 }
 #btn {
+    height: 45px;
+    width: 100%;
+
     position: relative;
     border: none;
     outline: none;
@@ -296,15 +279,18 @@ footer  {
     font-weight: 500;
     transition: 0.5s;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     position: center;
 }
+
+
+
 #btn:hover{
     background-color: var(--bg);
 }
 .bottom-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .bottom-content a{
     font-size: 1.25em;
@@ -312,41 +298,148 @@ footer  {
     font-weight: 500;
     text-decoration: none;
 }
+/* Register */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.register-form {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    background-position: 55%;
+}
+.register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25px);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.5px);
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.1);
+}
+.register h2{
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #8f2c24;
+}
+.register .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #8f2c24;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+.register .inputbox input::placeholder{
+    color: #8f2c24;
+    font-size: 17px;
+}
+#btn-register {
+    height: 45px;
+    width: 100%;
 
-  .sidebar{
-      
+    position: relative;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #8f2c24;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: center;
+}
+#btn-register:hover{
+    background-color: var(--bg);
+}
+.bottom-content-register{
+    display: flex;
+    justify-content: center;
+}
+.bottom-content-register a{
+    font-size: 1.25em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+.container-side {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+
+}
+  .sidebar {
+     width: 20px;
       height: 100%;
-      background: var(--bg);
-      position: absolute;
+      background-color: var(--bg);
+      position: fixed;
       z-index: 100;
       Font-family:'Lato', sans-serif;
   }
+
+  .btn {
+    position: absolute;
+    right: 5%;
+    margin-top: -0.5rem;
+  }
+
+  .sidebar h2 {
+    color: var(--primary);
+      text-align: center;
+      padding-top: 1rem;
+  }
+
+  .sidebar li{
+    padding: -1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
   ul {
       padding: 0;
       margin-left: -40px;
-      
   }
- 
-  ul li a{
+   ul li a{
+    text-align: center;
       text-decoration: none;
-      color: black;
       display: block;
-      padding: 19px 0px 18px 25px;
+      padding: 15px;
       transition: all 200ms ease-in;
-  } 
-   ul li a:hover{
-      text-decoration: none;
-      color: var(--primary); 
+  }  
+  .active{
+    color: black;
+  } */
+  .active:hover{
+    color:white;
   }
-  
-  ul li a:visited{
+
+   .ul li a:visited{
       text-decoration: none;
       color: #fff; 
   } 
-  
-  
+ 
+  
+
+   
   /*apabila lebar min 768px*/
-   @media(min-width: 768px) {
+    @media(min-width: 768px) {
       .sidebar{
           width: 240px;
       }
@@ -356,5 +449,11 @@ footer  {
       .inner{
           padding: 15px;
       }
-  }
+  } */
+
+  /* .d-flex{
+    margin: 1rem 0 1rem;
+  } */
+
+  
 
