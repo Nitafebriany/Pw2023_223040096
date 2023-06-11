@@ -98,7 +98,7 @@ if (isset($_POST["Search"])) {
   </div>
   </table>
   <li>
-    <button type="button" class="btn btn-primary" style="float: right;">
+    <button type="button" class="btn btn-primary">
       <a href="tambah.php" style="margin:30px; color: white; ">Tambah</a>
     </button>
   </li>
