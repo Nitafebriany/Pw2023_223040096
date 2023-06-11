@@ -23,3 +23,4 @@ require('partials/navbar.php');
 
     </div>
 </div>
+<?php require('partials/footer.php'); ?>

@@ -1,6 +1,4 @@
 <?php
-// session_start();
-
 $title = 'login';
 require('functions.php');
 

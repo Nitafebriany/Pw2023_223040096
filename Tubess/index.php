@@ -8,7 +8,7 @@ $title = "Home";
 
    <div class="row">
      <?php foreach ($lokasi as $lok) { ?>
-     <div class="col-md-3 py-8 py-md-0">
+     <div class="col-md-4 py-2 py-mx-1">
          <div class="card" style="">
            <img src=img/<?= $lok['gambar']; ?> alt="poster">
            <div class="card-body" style="margin:11px; padding:6px; height:8rem;">
@@ -20,6 +20,7 @@ $title = "Home";
         </div>
         <?php } ?>
      </div>
+     <a href="wisata.php" style="font-size: 40px; width:50px; float:right;"><i class="fas fa-chevron-right"></i> </a>
  </section>
 
 <?php require('partials/footer.php'); ?>

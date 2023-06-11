@@ -156,21 +156,24 @@
 /* About Start */
 .about {
     padding: 50px;
-    margin-top: 50px;
+    margin-top: 5px;
 }
-.about .card{
-    border-radius: 10px;
-}
-.about .card img{
+.about .container img{
     border-radius: 5px;
-    
-}
+    display: flex;
+    width: 50vh;
+    height: auto;
+    margin: 10 30%;
+      }
+      
+
 .about h2{
     font-weight: 600;
     letter-spacing: 1px;
 }
 .about p {
     font-weight: 1px;
+    white-space: 100%;
    
 }
  
@@ -223,13 +226,15 @@ footer  {
 }
 .login-form {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(./img/bg.jpg);
     background-size: cover;
     background-position: 55%;
+    
+   
 }
 .login {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     width: 400px;
@@ -265,6 +270,12 @@ footer  {
 .login .inputbox input::placeholder{
     color: #8f2c24;
     font-size: 17px;
+}
+@media screen and (max-width : 465px) {
+    .login {
+        display: block;
+        margin: auto 0;
+    }
 }
 #btn {
     height: 45px;
@@ -312,12 +323,12 @@ footer  {
     background-position: 55%;
 }
 .register {
-    position: absolute;
+    position: relative ;
     top: 50%;
     left: 50%;
     width: 400px;
     padding: 40px;
-    margin-top: 50px;
+    margin: 0 ;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.25px);
     backdrop-filter: blur(15px);
@@ -379,81 +390,13 @@ footer  {
     font-weight: 500;
     text-decoration: none;
 }
-.container-side {
-    width: 100%;
-    margin: auto;
-    padding: 0;
+/* register end */
 
-}
-  .sidebar {
-     width: 20px;
-      height: 100%;
-      background-color: var(--bg);
-      position: fixed;
-      z-index: 100;
-      Font-family:'Lato', sans-serif;
-  }
 
-  .btn {
-    position: absolute;
-    right: 5%;
-    margin-top: -0.5rem;
-  }
 
-  .sidebar h2 {
-    color: var(--primary);
-      text-align: center;
-      padding-top: 1rem;
-  }
 
-  .sidebar li{
-    padding: -1rem;
-    border: 1px solid white;
-    border-radius: 5px;
-  }
 
-  ul {
-      padding: 0;
-      margin-left: -40px;
-  }
-   ul li a{
-    text-align: center;
-      text-decoration: none;
-      display: block;
-      padding: 15px;
-      transition: all 200ms ease-in;
-  }  
-  .active{
-    color: black;
-  } */
-  .active:hover{
-    color:white;
-  }
 
-   .ul li a:visited{
-      text-decoration: none;
-      color: #fff; 
-  } 
- 
-  
-
-   
-  /*apabila lebar min 768px*/
-    @media(min-width: 768px) {
-      .sidebar{
-          width: 240px;
-      }
-      .content{
-          margin-left: 250px;
-      }
-      .inner{
-          padding: 15px;
-      }
-  } */
-
-  /* .d-flex{
-    margin: 1rem 0 1rem;
-  } */
 
   
 

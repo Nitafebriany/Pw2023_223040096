@@ -19,6 +19,15 @@ $galleri =
     ],
     [
         'gambar'=>'tumfull.jpg'
+    ],
+    [
+        'gambar' => 'keraton.jpg'
+    ],
+    [
+        'gambar' => 'parangtritis.jpg'
+    ],
+    [
+        'gambar' => 'borobudur.jpg'
     ]
 ]
 ?>
